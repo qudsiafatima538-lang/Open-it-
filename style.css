@@ -544,3 +544,193 @@ font-size:22px;
 line-height:2;
 color:#fff0d8;
 }
+/* =========================
+   REASONS HEART CARDS
+========================= */
+
+#heartCards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.reasonCard{
+height:170px;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,215,0,.2);
+border-radius:25px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+cursor:pointer;
+transition:.4s;
+backdrop-filter:blur(15px);
+font-size:18px;
+color:#fff;
+}
+
+.reasonCard:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 0 25px gold;
+}
+
+/* =========================
+COUNTDOWN
+========================= */
+
+#timer{
+
+font-size:45px;
+
+font-weight:bold;
+
+text-align:center;
+
+color:#ffd86b;
+
+margin-top:30px;
+
+text-shadow:0 0 20px gold;
+
+}
+
+/* =========================
+QUOTE BOX
+========================= */
+
+#quoteBox{
+
+font-size:24px;
+
+line-height:1.8;
+
+max-width:800px;
+
+margin:auto;
+
+text-align:center;
+
+color:#fff2da;
+
+font-style:italic;
+
+}
+
+/* =========================
+MUSIC BUTTON
+========================= */
+
+#musicBtn{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+font-size:28px;
+
+z-index:999;
+
+box-shadow:0 0 20px gold;
+
+}
+
+/* =========================
+SHOOTING STAR
+========================= */
+
+#shootingStar{
+
+position:absolute;
+
+top:100px;
+
+left:-250px;
+
+width:220px;
+
+height:3px;
+
+background:white;
+
+box-shadow:0 0 20px white;
+
+animation:shootStar 8s linear infinite;
+
+}
+
+@keyframes shootStar{
+
+0%{
+
+transform:translate(0,0) rotate(25deg);
+
+opacity:0;
+
+}
+
+10%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translate(1600px,500px) rotate(25deg);
+
+opacity:0;
+
+}
+
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+#hero h1{
+
+font-size:48px;
+
+}
+
+#typingText{
+
+font-size:18px;
+
+}
+
+section{
+
+padding:35px;
+
+}
+
+.moon{
+
+width:100px;
+
+height:100px;
+
+}
+
+#final h1{
+
+font-size:48px;
+
+}
+
+}
